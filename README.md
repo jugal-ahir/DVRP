@@ -21,6 +21,7 @@ This project simulates and optimizes vehicle routing in an urban logistics envir
 ├── src/                      # Source files (if any custom modules are added)
 ├── results/                  # Folder to store simulation results and plots
 └── README.md
+```
 
 ## ⚙️ Installation & Build Instructions
 
@@ -29,6 +30,7 @@ This project simulates and optimizes vehicle routing in an urban logistics envir
 ```bash
 git clone https://github.com/your-username/stochastic-routing-simulator.git
 cd stochastic-routing-simulator
+```
 
 2. **Build LKH TSP Solver**
 
@@ -37,4 +39,46 @@ Navigate to the LKH directory and build the solver using mingw32-make (ensure yo
 ```bash
 cd thirdParty/lkh/LKH-3.0.7
 mingw32-make
+```
+
+## 🚀 How to Run the Simulation
+
+After building the LKH solver, navigate to the `scripts` directory to run the simulation:
+
+```bash
+cd ../../../..
+cd scripts
+python main.py --show-sim --max-tasks 1000 --policy lkh_batch_tsp --lambd 0.8 --service-tim 1 --generator uniform
+```
+
+## 🔄 Command Breakdown:
+
+    --show-sim: Displays a live simulation plot.
+
+    --max-tasks 1000: Simulates up to 1000 customer requests.
+
+    --policy lkh_batch_tsp: Uses the LKH-based batch TSP solver.
+
+    --lambd 0.8: Lambda value to control request intensity.
+
+    --service-tim 1: Service time per task.
+
+    --generator uniform: Task request generator type.
+
+## 📝 License & Credits
+
+This project is created as part of the *Fundamentals of Probability in Computing* course, focusing on the application of stochastic processes in urban logistics.
+
+### 👩‍💻 Author:
+- Jugal Vaghmashi, Archi Daga, Avadh Nandasana, Aneri Maniar 
+
+### 📚 Guided By:
+- Prof. Dhaval Patel and TA Kunj Kanzariya
+
+### 📄 License:
+This project is open-source and available under the [MIT License](LICENSE).
+
+### 🤝 Acknowledgements:
+- [Katta G Krishnamurthy's LKH TSP Solver](http://webhotel4.ruc.dk/~keld/research/LKH/)
+- Visualization and simulation inspiration from similar research works on dynamic routing and stochastic modeling.
 
