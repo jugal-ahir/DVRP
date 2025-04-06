@@ -28,7 +28,7 @@ This project simulates and optimizes vehicle routing in an urban logistics envir
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/stochastic-routing-simulator.git
+git clone https://github.com/jugal-ahir/DVRP.git
 cd stochastic-routing-simulator
 ```
 
