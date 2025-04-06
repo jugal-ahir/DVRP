@@ -48,7 +48,7 @@ After building the LKH solver, navigate to the `scripts` directory to run the si
 ```bash
 cd ../../../..
 cd scripts
-python main.py --show-sim --max-tasks 1000 --policy lkh_batch_tsp --lambd 0.8 --service-tim 1 --generator uniform
+python main.py --show-sim --max-tasks 1000 --policy lkh_batch_tsp --lambd 0.8 --service-tim 1 --generator uniform --actors 2
 ```
 
 ## 🔄 Command Breakdown:
