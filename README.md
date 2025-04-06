@@ -37,7 +37,7 @@ cd stochastic-routing-simulator
 Navigate to the LKH directory and build the solver using mingw32-make (ensure you have MinGW installed):
 
 ```bash
-cd thirdParty/lkh/LKH-3.0.7
+cd thirdParty/lkh/LKH-3.0.7/src
 mingw32-make
 ```
 
