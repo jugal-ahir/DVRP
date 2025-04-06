@@ -29,7 +29,7 @@ This project simulates and optimizes vehicle routing in an urban logistics envir
 
 ```bash
 git clone https://github.com/jugal-ahir/DVRP.git
-cd stochastic-routing-simulator
+cd DVRP
 ```
 
 2. **Build LKH TSP Solver**
