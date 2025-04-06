@@ -25,7 +25,7 @@ This project simulates and optimizes vehicle routing in an urban logistics envir
 
 ## ⚙️ Installation & Build Instructions
 
-1. **Clone the Repository**
+1. **Clone the Repository** <kbd>Before cloning, please ensure that mingw-32 is installed on your computer and added to the system’s environment variables.</kbd>
 
 ```bash
 git clone https://github.com/jugal-ahir/DVRP.git
